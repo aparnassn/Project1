@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Video gallery</title>
+    </head>
+    <style>
+        .header
+        {
+            margin: 1%;
+        }
+        .header h2
+        {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .single-album
+        {
+            position: relative;
+            overflow: hidden;
+            box-shadow: 5px 5px 15px #000;
+        }
+        /*.album-img
+        {
+            position: relative;
+            overflow: hidden;
+        }*/
+        .album-img img
+        {
+            width: 20%;
+            height: auto;
+            transition: .2s;
+        }
+        .single-album:hover .album-img img
+        {
+            transform: scale(1.5,1.5);
+        }
+        /*.album-album-content
+        {
+            height: auto;
+            width: auto;
+            overflow: hidden;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            transition: all .4s;
+            background: crimson;
+        }
+        .single-album:hover .album-content
+        {
+            height: 150px;
+            background: #000;
+        }
+        .album-album-info
+        {
+            transition: all .5s;
+            padding: 5px 20px 5px 20px;
+        }
+        .album-info h3
+        {
+            font-size: 16px;
+            color: #fff;
+            margin: 5px;
+            text-transform: uppercase;
+        }
+        .single-album:hover .album-info h3
+        {
+            color: tomato;
+        }
+        .album-info p
+        {
+            color: #fff;
+            margin-top: 15px;
+        }
+        .album-text
+        {
+            color: #fff;
+            padding: 0 10px 5px;
+        }*/
+    </style>
+
+
+    <body>
+
+        <div class="album-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header text-center">
+                            <h2>BTS VIDEO GALLERY</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="single-album">
+                            <div class="album-img">
+                                <img src="http://static1.squarespace.com/static/5aa2069c25bf02363bf5c7c4/5f14d6bc74141a7869925e4e/6086d6156eeeef77485ef1e5/1622133026660/3bfd920c0f854cad80e21e29b642bd71511.jpg?format=1500w" alt="butter" ></img>
+                            </div>
+                            <div class="album-content">
+                                <div class="album-info">
+                                    <h3>BUTTER</h3>
+                                    <p>Bts-2021</p>
+                                </div>
+                                <p class="album-text">Butter special song</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
