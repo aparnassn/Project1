@@ -13,13 +13,16 @@ function handleDel(){
 }
 function handleDot(){
    if(document.getElementById('dot').innerText==="."){
-    console.log(".")
-    document.getElementById('display').value="."
+    let curr= document.getElementById('display').value;
+    let newnum = curr+".";
+    document.getElementById('display').value=newnum
    }
 }
 function handleSlash(){
     if(document.getElementById('slash').innerText==="/"){
-   document.getElementById('display').value="/"
+    let curr= document.getElementById('display').value;
+    let newnum = curr+"/";
+   document.getElementById('display').value=newnum
    }
 }
 function handleSeven(){

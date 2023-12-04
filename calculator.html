@@ -15,23 +15,43 @@
         }
 
         .container{
-            background-color: black;
+            background-color: rgb(3, 26, 87);
             width: 100%;
             height: 120;
             
         }
 
         .calculator {
-            background: purple;
+            
             padding: 75px;
-            
-            
 
         }
 
         .text{
             text-align: end;
+            width: 100%;
+            height: 55%;
+            background-color: burlywood;
+            border-top-right-radius:10px ;
+            border-bottom-left-radius:10px ;
+            border-bottom-right-radius:10px ;
+            border-top-left-radius:10px ;
+           
         }
+
+        .card{
+            padding: 30px;
+            width: 15rem;
+            background-color: darkcyan;
+            border-top-right-radius:7px ;
+            border-bottom-left-radius:7px ;
+            border-bottom-right-radius:7px ;
+            border-top-left-radius:7px ;
+            
+        }
+
+       
+        
         
 
     </style>
@@ -39,50 +59,53 @@
 <body>
 <div class="container" >
         <div class="calculator" >
+            
+              <!--  <div class="card-body">-->
 <div class="row justify-content-center">
    
     <div class="col-4">
+        <div class="card">
     <div class="row-5">
-        <input type="text" name="display" id="display" class="text">
+        <input type="text" name="display" id="display" class="text" >
     </div>
     <p></p>
-    <div class="row">
+    <div class="row-auto">
         <div class=" col-auto  ">
 
-            <button type="button" class="btn btn-primary" value="AC" id="clear" onclick="handleClick()">AC</button>
-            <button type="button" class="btn btn-primary" class="del" id="del" onclick="handleDel()">Del</button>
-            <button type="button" class="btn btn-primary" class="symbols" id="dot" onclick="handleDot()">.</button>
-            <button type="button" class="btn btn-primary" class="symbols" id="slash" onclick="handleSlash()">/</button>
+            <button type="button" class="btn btn-primary" value="AC" id="clear" onclick="handleClick()" style="background-color: brown;">AC</button>
+            <button type="button" class="btn btn-primary" class="del" id="del" onclick="handleDel()" style="background-color: brown;">Del</button>
+            <button type="button" class="btn btn-primary" class="symbols" id="dot" onclick="handleDot()" style="background-color: coral;">.</button>
+            <button type="button" class="btn btn-primary" class="symbols" id="slash" onclick="handleSlash()" style="background-color: coral;">/</button>
+        </div>
+    </div>
+    <p></p>
+    <div class="row-auto">
+        <div class="    ">
+
+            <button type="button" class="btn btn-primary" id="seven" onclick="handleSeven()" style="background-color: darkblue;">7</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="eight" onclick="handleEight()" style="background-color: darkblue;">8</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="nine" onclick="handleNine()"style="background-color: darkblue;">9</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="star" onclick="handleStar()" style="background-color: coral;">*</button>
         </div>
     </div>
     <p></p>
     <div class="row">
         <div class="    ">
 
-            <button type="button" class="btn btn-primary" id="seven" onclick="handleSeven()">7</button>&nbsp;
-            <button type="button" class="btn btn-primary" id="eight" onclick="handleEight()" >8</button>&nbsp;
-            <button type="button" class="btn btn-primary" id="nine" onclick="handleNine()">9</button>&nbsp;
-            <button type="button" class="btn btn-primary" id="star" onclick="handleStar()">*</button>
+            <button type="button" class="btn btn-primary" id="four" onclick="handleFour()" style="background-color: darkblue;">4</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="five" onclick="handleFive()" style="background-color: darkblue;">5</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="six" onclick="handleSix()" style="background-color: darkblue;">6</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="hyphen" onclick="handleHyphen()" style="background-color: coral;">-</button>
         </div>
     </div>
     <p></p>
     <div class="row">
         <div class="    ">
 
-            <button type="button" class="btn btn-primary" id="four" onclick="handleFour()">4</button>&nbsp;
-            <button type="button" class="btn btn-primary" id="five" onclick="handleFive()">5</button>&nbsp;
-            <button type="button" class="btn btn-primary" id="six" onclick="handleSix()">6</button>&nbsp;
-            <button type="button" class="btn btn-primary" id="hyphen" onclick="handleHyphen()">-</button>
-        </div>
-    </div>
-    <p></p>
-    <div class="row">
-        <div class="    ">
-
-            <button type="button" class="btn btn-primary" id="one" onclick="handleOne()">1</button>&nbsp;
-            <button type="button" class="btn btn-primary" id="two" onclick="handleTwo()">2</button>&nbsp;
-            <button type="button" class="btn btn-primary" id="three" onclick="handleThree()">3</button>&nbsp;
-            <button type="button" class="btn btn-primary" id="add" onclick="handleAdd()">+</button>
+            <button type="button" class="btn btn-primary" id="one" onclick="handleOne()" style="background-color: darkblue;">1</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="two" onclick="handleTwo()" style="background-color: darkblue;">2</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="three" onclick="handleThree()" style="background-color: darkblue;">3</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="add" onclick="handleAdd()" style="background-color: coral;">+</button>
         </div>
     </div>
 
@@ -91,15 +114,17 @@
     <div class="row">
         <div class="    ">
 
-            <button type="button" class="btn btn-primary" id="doublezero" onclick="handleDoublezero()">00</button>
-            <button type="button" class="btn btn-primary" id="zero" onclick="handleZero()">0</button>
-            <button type="button" class="btn btn-primary" style="width: 20%;" id="equal" onclick="handleEqual()">=</button>
+            <button type="button" class="btn btn-primary" id="doublezero" onclick="handleDoublezero()" style="background-color: darkblue;">00</button>
+            <button type="button" class="btn btn-primary" id="zero" onclick="handleZero()" style="background-color: darkblue;">0</button>
+            <button type="button" class="btn btn-primary" style="width: 45%; background-color: green;" id="equal" onclick="handleEqual()">=</button>
 
         </div>
     </div>
 </div>
 </div>
-
+</div>
+<!--</div>-->
+</div>
 </div>
 </div>
 <script src="./calculator.js">
