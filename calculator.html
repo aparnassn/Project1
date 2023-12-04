@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        .body{
+            background-color: bisque;
+            
+        }
+
+        .container{
+            background-color: black;
+            width: 100%;
+            height: 120;
+            
+        }
+
+        .calculator {
+            background: purple;
+            padding: 75px;
+            
+            
+
+        }
+
+        .text{
+            text-align: end;
+        }
+        
+
+    </style>
+</head>
+<body>
+<div class="container" >
+        <div class="calculator" >
+<div class="row justify-content-center">
+   
+    <div class="col-4">
+    <div class="row-5">
+        <input type="text" name="display" id="display" class="text">
+    </div>
+    <p></p>
+    <div class="row">
+        <div class=" col-auto  ">
+
+            <button type="button" class="btn btn-primary" value="AC" id="clear" onclick="handleClick()">AC</button>
+            <button type="button" class="btn btn-primary" class="del" id="del" onclick="handleDel()">Del</button>
+            <button type="button" class="btn btn-primary" class="symbols" id="dot" onclick="handleDot()">.</button>
+            <button type="button" class="btn btn-primary" class="symbols" id="slash" onclick="handleSlash()">/</button>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="    ">
+
+            <button type="button" class="btn btn-primary" id="seven" onclick="handleSeven()">7</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="eight" onclick="handleEight()" >8</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="nine" onclick="handleNine()">9</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="star" onclick="handleStar()">*</button>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="    ">
+
+            <button type="button" class="btn btn-primary" id="four" onclick="handleFour()">4</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="five" onclick="handleFive()">5</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="six" onclick="handleSix()">6</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="hyphen" onclick="handleHyphen()">-</button>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="    ">
+
+            <button type="button" class="btn btn-primary" id="one" onclick="handleOne()">1</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="two" onclick="handleTwo()">2</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="three" onclick="handleThree()">3</button>&nbsp;
+            <button type="button" class="btn btn-primary" id="add" onclick="handleAdd()">+</button>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="row">
+        <div class="    ">
+
+            <button type="button" class="btn btn-primary" id="doublezero" onclick="handleDoublezero()">00</button>
+            <button type="button" class="btn btn-primary" id="zero" onclick="handleZero()">0</button>
+            <button type="button" class="btn btn-primary" style="width: 20%;" id="equal" onclick="handleEqual()">=</button>
+
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="./calculator.js">
+
+</script>
+
+
+
+</body>
+
+</html>
